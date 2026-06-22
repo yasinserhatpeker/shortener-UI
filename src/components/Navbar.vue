@@ -5,8 +5,8 @@ const isAuthenticated = ref(false)
 </script>
 
 <template>
-    <nav class=" bg-blue-400  border- b border-gray-300">
-        <div class=" max-w-7xl p-4 sm:px-6 lg:px-8">
+    <nav class=" bg-blue-400  border-b border-gray-300">
+        <div class=" max-w-7xl mx-auto p-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-12">
                <div class="shrink-0">
                   <router-link to="/" class="text-2xl font-bold text-gray-900 text-shadow-cyan-800">
@@ -21,23 +21,23 @@ const isAuthenticated = ref(false)
                   <router-link to="/resources" class=" text-black  hover:text-gray-800 mx-2 font-medium transition">
                     Resources
                  </router-link>
-                  <router-link to="/resources" class=" text-black  hover:text-gray-800 mx-2 font-medium transition">
+                  <router-link to="/features" class=" text-black  hover:text-gray-800 mx-2 font-medium transition">
                     Features
                  </router-link>
                </div>
 
                <div class="flex items-center space-x-4">
                 <template v-if="!isAuthenticated">
-              <router-link to="/login" class="text-black hover:text-gray-900 font-bold transition">
-                    <button class="text-blue-500 hover:text-black font-bold transition cursor-pointer p-2 rounded-2xl bg-amber-50">Log In</button>
+              <router-link to="/login" class="text-blue-500 hover:text-gray-900 font-bold transition cursor-pointer p-2 rounded-2xl bg-amber-50">
+                    Log In
              </router-link>
-              <router-link to="/login" class="text-black hover:text-gray-900 font-bold transition">
+              <router-link to="/register" class="text-black hover:text-gray-900 font-bold transition">
                   Sign Up
              </router-link>
             </template>
 
             <template v-else>
-            <router-link to="dashboard" class="text-black hover:text-gray-900 font-bold transition">
+            <router-link to="/dashboard" class="text-black hover:text-gray-900 font-bold transition">
                Dashboard
             </router-link>
 
