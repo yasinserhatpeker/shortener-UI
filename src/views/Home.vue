@@ -1,5 +1,9 @@
+<script setup lang="ts">
+import { ref } from 'vue';
+const long_url = ref('')
+const custom_alias = ref('')
+</script>
+
 <template>
-    <div class="p-8">
-       <h2 class=" text-2xl font-bold text-shadow-cyan-400">Homepage</h2>
-    </div>
+    <h1>hello</h1>
 </template>
