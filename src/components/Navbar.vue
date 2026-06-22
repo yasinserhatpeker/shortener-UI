@@ -6,5 +6,7 @@ const isAuthenticated = ref(false)
 
 
 <template>
-    
+    <nav class="">
+
+    </nav>
 </template>

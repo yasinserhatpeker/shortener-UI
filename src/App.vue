@@ -1,10 +1,12 @@
 <script setup lang="ts">
+import Navbar from './components/Navbar.vue';
 </script>
 
 <template>
-  <div class="min-h-screen flex items-center justify-center bg-gray-900 text-white">
-    <h1 class="text-4xl font-bold text-emerald-400">
-      Tailwind v4 Hazır!
-    </h1>
+  <div class=" min-h-screen bg-gray-50 font-sans text-gray-900 flex flex-col"> 
+   <Navbar/>
+   <main class="grow">
+  <router-view></router-view>
+   </main>
   </div>
 </template>
