@@ -21,6 +21,9 @@ const isAuthenticated = ref(false)
                   <router-link to="/resources" class=" text-black  hover:text-gray-800 mx-2 font-medium transition">
                     Resources
                  </router-link>
+                  <router-link to="/resources" class=" text-black  hover:text-gray-800 mx-2 font-medium transition">
+                    Features
+                 </router-link>
                </div>
 
                <div class="flex items-center space-x-4">
@@ -44,10 +47,7 @@ const isAuthenticated = ref(false)
             
             </template>
              </div>
-              
-             
-
-            </div>
+              </div>
         </div>
       
     </nav>
