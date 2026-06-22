@@ -4,7 +4,6 @@ import { ref } from 'vue';
 const isAuthenticated = ref(false)
 </script>
 
-
 <template>
     <nav class=" bg-blue-400  border- b border-gray-300">
         <div class=" max-w-7xl p-4 sm:px-6 lg:px-8">
@@ -27,7 +26,7 @@ const isAuthenticated = ref(false)
                <div class="flex items-center space-x-4">
                 <template v-if="!isAuthenticated">
               <router-link to="/login" class="text-black hover:text-gray-900 font-bold transition">
-                    <button class=" bg-amber-50 rounded-2xl p-2 cursor-pointer">Log In</button>
+                    <button class="text-blue-500 hover:text-black font-bold transition cursor-pointer p-2 rounded-2xl bg-amber-50">Log In</button>
              </router-link>
               <router-link to="/login" class="text-black hover:text-gray-900 font-bold transition">
                   Sign Up
@@ -38,6 +37,10 @@ const isAuthenticated = ref(false)
             <router-link to="dashboard" class="text-black hover:text-gray-900 font-bold transition">
                Dashboard
             </router-link>
+
+           <button class="text-blue-500 hover:text-black font-bold transition cursor-pointer p-2 rounded-2xl bg-amber-50">
+              Log Out
+            </button>
             
             </template>
              </div>
